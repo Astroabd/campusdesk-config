@@ -2,5 +2,4 @@
 *.iml
 .env
 .env.*
-
 *.key
