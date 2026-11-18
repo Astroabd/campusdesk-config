@@ -9,7 +9,7 @@ spring:
 
     gateway:
       server:
-        webflux:
+        webmvc:
           routes:
             - id: authentication
               uri: lb://authentication
