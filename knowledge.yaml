@@ -1,0 +1,29 @@
+server:
+  port: 8083
+
+spring:
+  mongodb:
+    uri: mongodb://root:2005admin@localhost:27018/campusdesk_knowledge?authSource=admin
+  jackson:
+    deserialization:
+      fail-on-unknown-properties: true
+  web:
+    error:
+      include-message: never
+      include-stacktrace: never
+
+jwt:
+  secret: ${JWT_SECRET}
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
+    register-with-eureka: true
+    fetch-registry: true
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info
