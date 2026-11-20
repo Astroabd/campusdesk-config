@@ -3,7 +3,7 @@ server:
 
 spring:
   mongodb:
-    uri: mongodb://localhost:27017/campusdesk_knowledge
+    uri: mongodb://root:2005admin@localhost:27018/campusdesk_knowledge?authSource=admin
   jackson:
     deserialization:
       fail-on-unknown-properties: true
